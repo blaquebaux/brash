@@ -46,13 +46,7 @@ Nothing above is implemented or validated. This is the map, not the territory.
 **Scaffold.** Engine wired as a submodule; strategy research not yet conducted.
 
 ## The Blaque Baux family
-- **Blaque Baux** — base engine + validated slow risk-premium spine.
-- **Blunt** — short-horizon tactical sleeves.
-- **Brash** *(this repo)* — highly aggressive (crypto, alternatives).
-- **Bleed** — deeply contrarian; positioned for the tails (Black/White/Grey Swans, Dragon Kings).
-- **Bottom** — sub-small-cap / penny names.
-- **Brittle** — near-expiry, far-OTM options/ETFs; the other side of the lottery ticket.
-- **Boom** — mega-cap blue chips (the Magnificent 7 and peers).
+Base: **Blaque Baux** (engine + spine). Sleeves: **Blunt** (short-horizon tactical) · **Boom** (mega-cap blue chips) · **Brash** *(this repo)* · **Bleed** (tail-catcher) · **Bottom** (penny/micro-cap) · **Brittle** (near-expiry OTM options) · **Broad** (broad/thematic ETFs) · **Bore** (market-neutral) · **Bulk** (defense) · **Brown** (conservative sectors) · **Blue** (entertainment/green-energy/tech).
 
 ## Layout
 ```
