@@ -40,10 +40,30 @@ it honestly, keep the record including what fails):
   caveat (from the base's carry work) that carry is negative-skew and can be un-timeable.
 - **Alternative / convex sleeves** — asymmetric payoffs where the downside is defined.
 
-Nothing above is implemented or validated. This is the map, not the territory.
+## Research — first pass done
+
+Full detail in [`research/README.md`](research/README.md). Brash's job is **aggression,
+governed** — the growth-vs-ruin / Kelly-leverage lab. The scorecard:
+
+| # | Finding |
+|---|---------|
+| 1a | **The Kelly ceiling** — even on a strong edge, levered CAGR peaks at ~2× (Kelly 2.4×) then declines; negative past ~6× |
+| 1b | **Edge determines safe leverage** — strong edge tolerates 2–3×; weak edge ruins by 2×; negative edge (VIXY) annihilated |
+| 2 | **Vol-target is the governor** — 0% ruin even at 3×; VIXY median 1-yr $0.48; a drawdown brake over-de-risks crypto |
+
+**The synthesis:** aggression is a *distribution* choice, not a Sharpe choice. Even on the
+crypto-trend edge (Sharpe 0.83), full-Kelly (~2×) doubles the drawdown for a few % more CAGR,
+and beyond it growth *falls* while ruin explodes — "aggression multiplies edge; with none it
+multiplies only ruin" (BTC buy&hold ruins by 2×; VIXY is annihilated at any leverage). The
+aggressive keeper is the crypto-trend edge sized at **fractional Kelly with a vol-target** —
+the rule for being aggressive safely, not a new strategy. Reserve max aggression (VIXY-type
+convex bets) for nothing: they bleed (median 1-yr outcome $0.48). Caveat: the Kelly estimate
+is from one crypto cycle (2021–2026) — an upper bound, not a target.
 
 ## Status
-**Scaffold.** Engine wired as a submodule; strategy research not yet conducted.
+**Research: first pass complete — the aggression discipline** (`research/`). The keeper is
+governed leverage on the crypto-trend edge (fractional Kelly + vol-target). No live driver.
+Nothing validated to the spine's bar.
 
 ## The Blaque Baux family
 This repo is one sleeve of the **Blaque Baux** family — a single governed engine steered in
@@ -53,7 +73,7 @@ base/blueprint and holds the [full family roster](https://github.com/Carter-Warr
 ## Layout
 ```
 engine/     the Blaque Baux platform (git submodule → Carter-Warrens/blaquebaux)
-research/   Path-A strategy sketches (to come)
+research/   two Path-A sketches (Kelly frontier, terminal-wealth/ruin) + scorecard
 live/       governed live drivers (once a sleeve graduates to paper A/B)
 ```
 
