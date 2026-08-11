@@ -61,9 +61,15 @@ convex bets) for nothing: they bleed (median 1-yr outcome $0.48). Caveat: the Ke
 is from one crypto cycle (2021–2026) — an upper bound, not a target.
 
 ## Status
-**Research: first pass complete — the aggression discipline** (`research/`). The keeper is
-governed leverage on the crypto-trend edge (fractional Kelly + vol-target). No live driver.
-Nothing validated to the spine's bar.
+**Research: first pass complete — the aggression discipline; standalone driver built** (`research/` +
+`live/`). The keeper is governed leverage on the crypto-trend edge (fractional Kelly + vol-target).
+`live/brash_live.jl` runs it standalone through the engine's order path + Layer-3 safety gate: the
+crypto-trend edge (IBIT/ETHA) sized aggressively — a 25% vol-target capped at 1.5× gross. **Dry-run by
+default**; graduates to paper with its own isolated keys. Aggressive by design (overlaps bitdollar's
+edge); not validated to the spine's bar.
+```bash
+BB_DRYRUN=1 julia --project=engine live/brash_live.jl
+```
 
 ## The Blaque Baux family
 This repo is one sleeve of the **Blaque Baux** family — a single governed engine steered in
