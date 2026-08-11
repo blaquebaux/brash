@@ -72,7 +72,15 @@ edge); not validated to the spine's bar.
 2024), but the *actual* crypto-trend thesis PASSES on the real BTC/USD + ETH/USD rail — aggressive
 sizing **+0.72 Sharpe / +10% CAGR / −20% maxDD** (2021–2026, net of cost) vs buy-and-hold +0.29 / −76%.
 The edge is real; the proxy is the problem. See `blaquebaux-bitdollar` → `research/bitdollar_crypto_validation.py`
-(shared crypto edge). Trading it live needs crypto order support wired into the engine's venue layer.
+(shared crypto edge).
+
+**Crypto execution is now wired** — [`live/brash_crypto_live.jl`](live/brash_crypto_live.jl) trades the
+aggressive crypto-trend edge on the **real BTC/USD + ETH/USD rail** (fractional orders, 25% vol-target
+capped at 1.5× gross) through the same Layer-3 safety gate + reconcile as the spine. **Dry-run by
+default**. The ETF-proxy driver (`brash_live.jl`) remains for equity-only accounts.
+```bash
+BB_DRYRUN=1 julia --project=engine live/brash_crypto_live.jl   # real BTC/ETH, aggressive, no orders
+```
 ```bash
 BB_DRYRUN=1 julia --project=engine live/brash_live.jl
 ```
