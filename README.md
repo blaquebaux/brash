@@ -67,6 +67,12 @@ is from one crypto cycle (2021–2026) — an upper bound, not a target.
 crypto-trend edge (IBIT/ETHA) sized aggressively — a 25% vol-target capped at 1.5× gross. **Dry-run by
 default**; graduates to paper with its own isolated keys. Aggressive by design (overlaps bitdollar's
 edge); not validated to the spine's bar.
+
+**Validation:** the equity-rail gate FAILS on the spot ETF proxy (OOS Sharpe −0.69, ETFs only since
+2024), but the *actual* crypto-trend thesis PASSES on the real BTC/USD + ETH/USD rail — aggressive
+sizing **+0.72 Sharpe / +10% CAGR / −20% maxDD** (2021–2026, net of cost) vs buy-and-hold +0.29 / −76%.
+The edge is real; the proxy is the problem. See `blaquebaux-bitdollar` → `research/bitdollar_crypto_validation.py`
+(shared crypto edge). Trading it live needs crypto order support wired into the engine's venue layer.
 ```bash
 BB_DRYRUN=1 julia --project=engine live/brash_live.jl
 ```
