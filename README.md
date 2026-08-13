@@ -2,7 +2,7 @@
 
 **Deliberately aggressive. Crypto and alternatives, sized for convex upside — governed so aggression never becomes uncontrolled ruin.**
 
-Brash is a member of the Blaque Baux family. The [core repo](https://github.com/blaque-baux/base)
+Brash is a member of the Blaque Baux family. The [core repo](https://github.com/blaquebaux/base)
 is the **engine and blueprint**: a governed, systematic platform (Julia) with a
 venue-agnostic execution controller and a Layer-3 live-money safety gate. Brash points
 that engine at the high-octane end of the market — crypto, leverage, alternative and
@@ -14,7 +14,7 @@ same idempotency, reconciliation, kill switch, and drawdown/loss gates as the sp
 > outsized risk, including total loss. Nothing here is validated. See [LICENSE](LICENSE).
 
 ```bash
-git clone --recursive https://github.com/blaque-baux/brash.git
+git clone --recursive https://github.com/blaquebaux/brash.git
 julia --project=engine -e 'using Pkg; Pkg.instantiate()'   # one-time engine setup
 ```
 
@@ -99,12 +99,12 @@ honest research, reproducible evidence, and execution you can trust — is why C
 
 ## The Blaque Baux family
 This repo is one sleeve of the **Blaque Baux** family — a single governed engine steered in
-many directions. The [core repo](https://github.com/blaque-baux/base) is the
-base/blueprint and holds the [full family roster](https://github.com/blaque-baux/base#the-blaque-baux-family).
+many directions. The [core repo](https://github.com/blaquebaux/base) is the
+base/blueprint and holds the [full family roster](https://github.com/blaquebaux/base#the-blaquebaux-family).
 
 ## Layout
 ```
-engine/     the Blaque Baux platform (git submodule → blaque-baux/base)
+engine/     the Blaque Baux platform (git submodule → blaquebaux/base)
 research/   two Path-A sketches (Kelly frontier, terminal-wealth/ruin) + scorecard
 live/       governed live drivers (once a sleeve graduates to paper A/B)
 ```

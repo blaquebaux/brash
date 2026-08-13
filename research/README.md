@@ -2,7 +2,7 @@
 
 First-pass Path-A research on the aggressive sleeve. Brash's distinctive job is **aggression,
 governed** — the growth-vs-ruin / Kelly-leverage lab, extending the base's `growth_vs_ruin`.
-(Crypto trend itself is the [BitDollar](https://github.com/blaque-baux/bitdollar)
+(Crypto trend itself is the [BitDollar](https://github.com/blaquebaux/bitdollar)
 keeper; here it is the *edge* we study aggression on.) All sketches read Alpaca crypto + stock
 bars, are read-only, print their own results.
 
