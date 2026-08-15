@@ -109,5 +109,8 @@ research/   two Path-A sketches (Kelly frontier, terminal-wealth/ruin) + scoreca
 live/       governed live drivers (once a sleeve graduates to paper A/B)
 ```
 
+## BLAQUE BAUX
+Explore the [production site](https://www.blaquebaux.com/), [interactive LABS](https://www.blaquebaux.com/labs/), and [open research CORPUS](https://www.blaquebaux.com/corpus/).
+
 ## License
 [MIT](LICENSE). © 2026 Carter Warrens.
